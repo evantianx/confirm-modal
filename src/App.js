@@ -3,11 +3,12 @@ import Modal from "react-modal"
 import { confirmationFlow } from "./confirmationFlow"
 
 const deleteSomething = async () => {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     console.log("Beginning deletion...")
     setTimeout(() => {
       console.log("Done deleting")
-      resolve()
+      // resolve()
+      reject("Ugh!")
     }, 1000)
   })
 }
@@ -33,6 +34,7 @@ const App = () => {
         onRequestClose={() => send("cancel")}
         isOpen={current.name === "confirming" || current.name === "loading"}
       >
+        {current.context.error && <div>{current.context.error}</div>}
         Are you sure?
         <button
           onClick={() => send("cancel")}
