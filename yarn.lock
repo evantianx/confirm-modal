@@ -8947,6 +8947,13 @@ react-refresh@^0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-robot@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/react-robot/-/react-robot-0.2.2.tgz#2c180f27afed94c2e1648d416628661696f71186"
+  integrity sha512-EjD+4UBwVyxfFz6dMdMdd5DnyDGd1vcx8qwIWA3dEtYOfZXCsH68gSMAYS4jLQxM2aBg9M6Ttg2unsSt2sG6DA==
+  dependencies:
+    robot-hooks "^0.3.6"
+
 react-scripts@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-4.0.1.tgz#34974c0f4cfdf1655906c95df6a04d80db8b88f0"
@@ -9409,6 +9416,16 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+robot-hooks@^0.3.6:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/robot-hooks/-/robot-hooks-0.3.7.tgz#1f21aaeb2dd572acbe5af7cceac5c5a24020fc88"
+  integrity sha512-mxKIa+GIKYgOjW9p7RzVtSNUStOOFF6qGUl38j3f8wCEfEP0QhkSQoTxz3LkiIDNOTP9XKSJhzhwz9umKX31yA==
+
+robot3@^0.2.18:
+  version "0.2.18"
+  resolved "https://registry.yarnpkg.com/robot3/-/robot3-0.2.18.tgz#bc920db22b91abb044c4e95289baa877fc3d8288"
+  integrity sha512-0P3HfHVJfPKObpoIciglMefFYhMtdGMRjh5KE5U+NydwrheOnbA3GqlB84Wcy5h6UMseb77MpedUDyKZVIkiug==
 
 rollup-plugin-babel@^4.3.3:
   version "4.4.0"
