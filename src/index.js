@@ -1,12 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Modal from "react-modal"
+import { App } from "./App"
 import reportWebVitals from "./reportWebVitals"
+
+const root = document.getElementById("root")
+Modal.setAppElement(root)
 
 ReactDOM.render(
   <React.StrictMode>
-    <p>hello world</p>
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  root
 )
 
 // If you want to start measuring performance in your app, pass a function
