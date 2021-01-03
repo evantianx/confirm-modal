@@ -2,6 +2,16 @@ import { useMachine } from "react-robot"
 import Modal from "react-modal"
 import { confirmationFlow } from "./confirmationFlow"
 
+const deleteSomething = async () => {
+  return new Promise((resolve) => {
+    console.log("Beginning deletion...")
+    setTimeout(() => {
+      console.log("Done deleting")
+      resolve()
+    }, 1000)
+  })
+}
+
 const App = () => {
   const [current, send] = useMachine(confirmationFlow)
 
@@ -9,7 +19,16 @@ const App = () => {
     <div>
       <h1>Modal Test</h1>
       Current state: {current.name}
-      <button onClick={() => send("begin")}>Destroy your secret?</button>
+      <button
+        onClick={() =>
+          send({
+            type: "begin",
+            onCommit: (_context, _event) => deleteSomething(),
+          })
+        }
+      >
+        Destroy your secret?
+      </button>
       <Modal
         onRequestClose={() => send("cancel")}
         isOpen={current.name === "confirming" || current.name === "loading"}
